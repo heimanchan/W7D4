@@ -4,7 +4,6 @@ json.pokemon do
 end
 
 json.items do 
-
   @poke.items.each do |item|
     json.set! item.id do 
       json.extract! item, :id, :name, :pokemon_id, :price, :happiness
@@ -12,6 +11,4 @@ json.items do
 
     end
   end
-    
-  # json.extract! @poke.items :name
 end
